@@ -1,10 +1,12 @@
 makeCacheMatrix<-function(x=matrix()){
+  ##Setting defaults
   m<-NULL
   set<-function(x){
     x<<-y
     m<<-NULL
     
   }
+  ##Setting the inverse in cache
   get<-function() x 
   setmatrix<-function(solve) m<<- solve
   getmatrix<-function() m
